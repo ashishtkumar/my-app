@@ -11,4 +11,8 @@ node{
           Thanks
           Jenkins''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'ashishvkumar7@gmail.com'
   }
+  stage('Slack Notificaion'){
+    slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#test', color: 'good', message: 'Hi! Welcome to Jenkins', 
+      teamDomain: 'AppDev', tokenCredentialId: 'slack'
+  }
 }
