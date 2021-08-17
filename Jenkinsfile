@@ -16,7 +16,7 @@ node{
     }
   }
   stage("Quality Gate Status Check"){
-    timeout(time: 1, unit: 'HOURS') {
+    timeout(time: 10, unit: 'MINUTES') {
       def qg = waitForQualityGate()
       if (qg.status != 'OK') {
         slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#test', color: 'danger', message: 'Quality Gate Status Check failed', 
@@ -24,6 +24,7 @@ node{
         error "Pipeline aborted due to quality gate failure: ${qg.status}"
       }
     }
+    echo "Quality Gate Status check Passed"
   }        
   stage('Email Notificaion'){
     mail bcc: '', body: '''Hi, Welcome to Jenkins email address.
