@@ -19,6 +19,8 @@ node{
     timeout(time: 1, unit: 'HOURS') {
       def qg = waitForQualityGate()
       if (qg.status != 'OK') {
+        slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#test', color: 'danger', message: 'Quality Gate Status Check failed', 
+      teamDomain: 'AppDev', tokenCredentialId: 'slack'
         error "Pipeline aborted due to quality gate failure: ${qg.status}"
       }
     }
