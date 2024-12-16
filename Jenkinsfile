@@ -30,7 +30,7 @@ node{
   stage('Email Notificaion'){
     mail bcc: '', body: '''Hi, Welcome to Jenkins email address.
           Thanks
-          Jenkins''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'ashishvkumar7@gmail.com'
+          Jenkins''', cc: '', from: 'ashishvkumar7@gmail.com', replyTo: '', subject: 'Jenkins Job', to: 'ashishvkumar7@gmail.com'
   }
   stage('Slack Notificaion'){
     slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#test', color: 'good', message: 'Hi! Welcome to Jenkins', 
