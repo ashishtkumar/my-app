@@ -1,31 +1,28 @@
-Open Notebook.onetoc2
-src/Open Notebook.onetoc2
-src/main/Open Notebook.onetoc2
-src/main/java/Open Notebook.onetoc2
-src/main/java/com/Open Notebook.onetoc2
-src/main/java/com/mycompany/Open Notebook.onetoc2
-src/main/java/com/mycompany/app/Open Notebook.onetoc2
-src/test/Open Notebook.onetoc2
-src/test/java/Open Notebook.onetoc2
-src/test/java/com/Open Notebook.onetoc2
-src/test/java/com/mycompany/Open Notebook.onetoc2
-src/test/java/com/mycompany/app/Open Notebook.onetoc2
-target/Open Notebook.onetoc2
-target/classes/Open Notebook.onetoc2
-target/classes/com/Open Notebook.onetoc2
-target/classes/com/mycompany/Open Notebook.onetoc2
-target/classes/com/mycompany/app/Open Notebook.onetoc2
-target/generated-sources/
-target/generated-test-sources/
-target/maven-archiver/Open Notebook.onetoc2
-target/maven-status/Open Notebook.onetoc2
-target/maven-status/maven-compiler-plugin/Open Notebook.onetoc2
-target/maven-status/maven-compiler-plugin/compile/Open Notebook.onetoc2
-target/maven-status/maven-compiler-plugin/compile/default-compile/Open Notebook.onetoc2
-target/maven-status/maven-compiler-plugin/testCompile/Open Notebook.onetoc2
-target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/Open Notebook.onetoc2
-target/surefire-reports/Open Notebook.onetoc2
-target/test-classes/Open Notebook.onetoc2
-target/test-classes/com/Open Notebook.onetoc2
-target/test-classes/com/mycompany/Open Notebook.onetoc2
-target/test-classes/com/mycompany/app/Open Notebook.onetoc2
+# Maven build output
+/target/
+
+# IntelliJ IDEA
+*.iml
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Java
+*.class
+
+# Build tools
+.mvn/
